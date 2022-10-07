@@ -1,0 +1,15 @@
+<p>Heroes</p>
+
+<ul *ngFor="let item of heroes; let i = index">  
+    <li>{{i}}. {{item}}</li>
+</ul>
+
+<button (click)="borrarHeroe()">Borrar</button>
+
+<h3 *ngIf="heroesBorrados.length >= 1">Heroes borrados</h3>
+
+<h3 *ngIf="heroesBorrados.length >= 1">....</h3>
+
+<ul *ngFor="let item of heroesBorrados; let i = index"> 
+    <li>{{i}}. {{item}}</li>
+</ul>
